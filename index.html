@@ -3,6 +3,7 @@
 <head>
  <link rel="stylesheet" href="styles.css">
  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+ document.getElementById("demo").innerHTML = "Hello JavaScript";
 </head>
 <style>
 h1{
@@ -51,6 +52,23 @@ img {
   visibility:hidden;
 }
 </style>
+ <script>
+  var i=0;
+var images= ['https://i.pinimg.com/474x/ae/c9/a3/aec9a3e24692d062f68dee44a489d1fa--arte-dope-dope-art.jpg', 'https://i.pinimg.com/564x/bb/a0/cc/bba0ccb9d915690669c81d326259bce2.jpg', 'http://storage.torontosun.com/v1/dynamic_resize/sws_path/suns-prod-images/1297862520530_ORIGINAL.jpg?quality=80&size=650x']
+$("#slideshow img").attr("src", images[0]);
+$("#previous").click(function(){
+  i=(i+1) % images.length;
+  $("#slideshow img").attr("src", images[i]);
+})
+$("#next").click(function(){
+  i=(i+2) % images.length;
+  $("#slideshow img").attr("src", images[i])
+});
+$("#hidden").click(
+  function(){
+  $("#posts").toggleClass("hidden")
+});
+ </script>
 <body>
 <div id="slideshow">
   <img src=https://i.pinimg.com/474x/ae/c9/a3/aec9a3e24692d062f68dee44a489d1fa--arte-dope-dope-art.jpg>
