@@ -15,26 +15,9 @@ h3{
 #buttons{
   text-align: center;
 }
-#first{
-  background-color:white;
-  padding: 25px;
-  border:4px dashed black;
-  margin: 30px;
-}
 p{
   background-color:white;
 }
-#second{
-   background-color:white;
-  padding: 25px;
-  border:4px dashed black;
-  margin: 30px;
-}
-#third{
-  background-color:white;
-  padding: 25px;
-  border:4px dashed black;
-  margin: 30px;
 }
 img {
   width: 250px;
@@ -57,5 +40,8 @@ nav ul li{
   padding: 25px;
   border:4px dashed black;
   margin: 30px;
+}
+h2{
+  background-color:white;
 }
   
