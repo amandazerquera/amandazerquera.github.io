@@ -6,17 +6,8 @@
 		{% include nav.html %}
 		{% include header.html %}
 		
-		<div class="content">
-			{% for post in site.posts %}
-		<h2> {{post.title}} </h2>
-			<p> {{post.date}}</p>
-		{{ post.excerpt }}
-			<a href= "{{ post.url }}">Read More</a>
-		
-		{% endfor %}
 			{{ content }}
 <button id="hidden"> show posts/hide posts</button>
-</div>
 </content>
 </html>
 		
